@@ -7,6 +7,8 @@
     <title>PT. Indo Darpa Ardana</title>
     <link rel="shortcut icon" href="./src/assets/img/logo/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./src/output.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 </head>
 
@@ -124,11 +126,10 @@
 
                         <!-- Button Group -->
                         <div class=" flex flex-wrap items-center gap-x-1.5 mt-3 lg:mt-0">
-                            <a class="py-2.5 px-4 w-full lg:w-auto justify-center rounded-full   inline-flex items-center font-medium text-sm md:text-base  border border-secondary bg-blue-50 text-primary shadow-2xs hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none focus:outline-hidden focus:bg-secondary focus:text-white"
-                                href="#">
-                                Contact Us
-                            </a>
-
+                            <div class="py-2.5 px-4 w-full lg:w-auto justify-center rounded-full   inline-flex items-center font-medium text-sm md:text-base  border border-secondary bg-blue-50 text-primary shadow-2xs transition-all duration-300 ease-in-out hover:bg-primary hover:text-white disabled:opacity-50 disabled:pointer-events-none cursor-pointer focus:outline-hidden focus:bg-primary focus:text-white"
+                                onclick="redirectToWhatsapp()">
+                                Konsultasi Gratis
+                            </div>
                         </div>
                         <!-- End Button Group -->
                     </div>
@@ -150,17 +151,18 @@
                     class="mx-auto text-center py-3 px-4 inline rounded-full text-xs font-medium bg-blue-100 text-blue-900 mb-2">Inovasi
                     dalam Setiap Konstruksi</span> -->
                     <!-- opsi 2 -->
-                    <span
+                    <span data-aos="fade-up" data-aos-duration="1000"
                         class=" inline-block text-center py-3 px-4  rounded-full text-xs sm:text-base font-medium bg-blue-100 text-blue-900 mb-6">
                         Membangun
                         dengan Integritas dan Inovasi</span>
 
-                    <h1
+                    <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"
                         class="font-bold text-3xl sm:text-5xl xl:text-[55px]  text-center lg:text-start mb-5 leading-11 sm:leading-16 xl:leading-[68px] ">
                         Solusi <span class="text-primary">Profesional</span>
                         untuk Proyek <span class="text-primary">Berkelanjutan</span></h1>
 
-                    <p class="text-slate-500 text-center lg:text-start text-base sm:text-lg  mb-9 lg:mb-7">
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150"
+                        class="text-slate-500 text-center lg:text-start text-base sm:text-lg  mb-9 lg:mb-7">
                         Kami
                         menghadirkan
                         layanan pengadaan,
@@ -168,8 +170,9 @@
                         konstruksi
                         berstandar tinggi, berlandaskan profesionalisme dan inovasi</p>
 
-                    <span
-                        class=" inline-flex mx-auto font-semibold text-center py-1.5 sm:py-3 lg:py-2 px-6  rounded-full text-base sm:text-xl lg:text-base xl:text-xl bg-blue-900 text-white justify-center items-center gap-x-5 mb-10 xl:mb-12">
+                    <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
+                        onclick="redirectToWhatsapp()"
+                        class="cursor-pointer inline-flex mx-auto font-semibold text-center py-1.5 sm:py-3 lg:py-2 px-6  rounded-full text-base sm:text-xl lg:text-base xl:text-xl bg-blue-900 text-white justify-center items-center gap-x-5 mb-10 xl:mb-12">
 
                         <p>Gratis Konsultasi</p>
                         <span
@@ -184,11 +187,12 @@
                         </span>
                     </span>
 
-                    <div class="grid grid-cols-3 bg-blue-100 p-4 gap-2 rounded-sm lg:text-center">
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250"
+                        class="grid grid-cols-3 bg-blue-100 p-4 gap-2 rounded-sm lg:text-center">
                         <div class="pengalaman">
                             <div
                                 class="total text-primary text-4xl sm:text-5xl lg:text-4xl xl:text-5xl font-bold mb-2.5">
-                                5+
+                                <span id="total_pengalaman">0</span>+
                             </div>
 
                             <div class="subtitle-pengalaman text-slate-500 text-sm sm:text-lg lg:text-base">
@@ -199,7 +203,7 @@
                         <div class="Proyek ">
                             <div
                                 class="total text-primary text-4xl sm:text-5xl lg:text-4xl xl:text-5xl font-bold mb-2.5">
-                                200+
+                                <span id="total_proyek">0</span>+
                             </div>
                             <div class="subtitle-pengalaman text-slate-500 text-sm sm:text-lg lg:text-base">
                                 Proyek Selesai
@@ -209,7 +213,7 @@
                         <div class="tim-ahli ">
                             <div
                                 class="total text-primary text-4xl sm:text-5xl lg:text-4xl xl:text-5xl font-bold mb-2.5">
-                                10
+                                <span id="total_ahli">0</span>
                             </div>
                             <div class="subtitle-pengalaman text-slate-500 text-sm sm:text-lg lg:text-base">
                                 Tim Ahli
@@ -221,7 +225,8 @@
                 </div>
 
                 <div class="hero-image">
-                    <div class="w-full h-[300px] sm:h-[400px] lg:h-[625px] rounded-lg overflow-hidden">
+                    <div class="w-full h-[300px] sm:h-[400px] lg:h-[625px] rounded-lg overflow-hidden"
+                        data-aos="fade-up" data-aos-duration="1500" data-aos-delay="250">
                         <img src="./src/assets/img/gallery/image-1.webp"
                             class="h-full w-full object-cover object-center" alt="hero section image">
                     </div>
@@ -232,19 +237,13 @@
     </section>
     <!-- end hero section -->
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./node_modules/preline/dist/preline.js"></script>
-
+    <script src="./src/assets/js/myscript.js"></script>
     <script>
-        const listMenu = document.querySelectorAll(".list-menu")
-
-        listMenu.forEach(lm => {
-            lm.addEventListener("click", () => {
-                listMenu.forEach(item => item.classList.remove("active-tab"));
-                lm.classList.add("active-tab");
-            });
+        AOS.init({
+            once: true,
         });
-
     </script>
 </body>
 
