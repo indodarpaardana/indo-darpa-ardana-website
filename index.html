@@ -16,8 +16,8 @@
         <nav
             class="relative max-w-340 w-full mx-auto lg:flex lg:items-center lg:justify-between lg:gap-3 py-2 px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center gap-x-1 w-full lg:w-auto ">
-                <a class="flex-none font-semibold text-xl text-black focus:outline-hidden focus:opacity-80" href="#"
-                    aria-label="Brand">
+                <a class="flex-none font-semibold text-xl text-black focus:outline-hidden focus:opacity-80"
+                    href="#beranda" aria-label="Brand">
                     <img src="./src/assets/img/logo/logo.png" class="w-20 sm:w-28 " alt="Logo Perusahaan">
                 </a>
 
@@ -53,8 +53,8 @@
                     <div class="py-2 sm:py-5 lg:py-0  flex flex-col lg:flex-row lg:items-center gap-0.5 lg:gap-1">
                         <div class="grow">
                             <div class="flex flex-col lg:flex-row lg:justify-center lg:items-center gap-0.5 lg:gap-1">
-                                <a class="p-2 flex items-center text-sm md:text-base  text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100"
-                                    href="#" aria-current="page">
+                                <a class="list-menu p-2 flex items-center text-sm md:text-base  text-gray-800  hover:bg-secondary rounded-lg focus:outline-hidden "
+                                    href="#beranda" aria-current="page">
                                     <svg class="shrink-0 size-4 me-3 lg:me-2 block lg:hidden"
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -66,7 +66,7 @@
                                     Beranda
                                 </a>
 
-                                <a class="p-2 flex items-center text-sm md:text-base text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100"
+                                <a class="list-menu p-2 flex items-center text-sm md:text-base text-gray-800  hover:bg-secondary rounded-lg focus:outline-hidden "
                                     href="#">
                                     <svg class="shrink-0 size-4 me-3 lg:me-2 block lg:hidden"
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -78,7 +78,7 @@
                                     Tentang Kami
                                 </a>
 
-                                <a class="p-2 flex items-center text-sm md:text-base text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100"
+                                <a class="list-menu p-2 flex items-center text-sm md:text-base text-gray-800  hover:bg-secondary rounded-lg focus:outline-hidden "
                                     href="#">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -91,7 +91,7 @@
                                     Layanan
                                 </a>
 
-                                <a class="p-2 flex items-center text-sm md:text-base text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100"
+                                <a class="list-menu p-2 flex items-center text-sm md:text-base text-gray-800  hover:bg-secondary rounded-lg focus:outline-hidden "
                                     href="#">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -105,7 +105,7 @@
                                     </svg>
                                     Struktur Perusahaan
                                 </a>
-                                <a class="p-2 flex items-center text-sm md:text-base text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100"
+                                <a class="list-menu p-2 flex items-center text-sm md:text-base text-gray-800  hover:bg-secondary rounded-lg focus:outline-hidden "
                                     href="#">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -141,7 +141,7 @@
 
 
     <!-- start hero section -->
-    <section class="pt-28 sm:pt-40 pb-11">
+    <section class="pt-28 sm:pt-40 pb-11" id="beranda">
         <div class="container w-full  max-w-340 mx-auto px-4 md:px-6 lg:px-8">
             <div class="w-full grid grid-cols-1 lg:grid-cols-2  gap-12">
                 <div class="hero-desc w-full text-center lg:text-start">
@@ -234,6 +234,18 @@
 
 
     <script src="./node_modules/preline/dist/preline.js"></script>
+
+    <script>
+        const listMenu = document.querySelectorAll(".list-menu")
+
+        listMenu.forEach(lm => {
+            lm.addEventListener("click", () => {
+                listMenu.forEach(item => item.classList.remove("active-tab"));
+                lm.classList.add("active-tab");
+            });
+        });
+
+    </script>
 </body>
 
 </html>

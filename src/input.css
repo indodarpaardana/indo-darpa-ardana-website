@@ -11,6 +11,14 @@
   --color-secondary: #8cbdfe;
 }
 
+html {
+  @apply scroll-smooth;
+}
+
 body {
   @apply font-poppins mb-[2000px] bg-[#F8FAFC];
+}
+
+.active-tab {
+  @apply text-white bg-primary;
 }
