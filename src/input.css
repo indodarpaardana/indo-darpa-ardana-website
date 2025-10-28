@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  @apply font-poppins mb-[2000px] bg-[#F8FAFC];
+  @apply font-poppins bg-[#F8FAFC];
 }
 
 .active-tab {

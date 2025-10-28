@@ -43,7 +43,7 @@ animateValue("total_ahli", 0, 10, 1500);
 
 const redirectToWhatsapp = () => {
   window.open(
-    "https://api.whatsapp.com/send?phone=6282197504619&text=Halo+admin+PT.+Indo+Darpa+Ardana%2C+Saya+ingin+konsultasi...",
+    "https://api.whatsapp.com/send?phone=6285693232116&text=Halo+admin+PT.+Indo+Darpa+Ardana%2C+Saya+ingin+konsultasi...",
     "_blank",
     "noopener,noreferrer"
   );
