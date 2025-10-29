@@ -39,6 +39,25 @@ animateValue("total_ahli", 0, 10, 1500);
 
 // end animate counter
 
+// start automatic close navbar mobile when click list menu
+document.addEventListener("DOMContentLoaded", function () {
+  const collapseMenu = document.querySelector("#hs-header-base");
+  const toggleButton = document.querySelector("#hs-header-base-collapse");
+  const menuLinks = collapseMenu.querySelectorAll(".list-menu");
+
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      // hanya jalankan di mobile (saat tombol toggle kelihatan)
+      if (window.getComputedStyle(toggleButton).display !== "none") {
+        // trigger tombol toggle untuk menutup menu
+        toggleButton.click();
+      }
+    });
+  });
+});
+
+// end automatic close navbar mobile when click list menu
+
 // start redirect to whatsapp api
 
 const redirectToWhatsapp = () => {
