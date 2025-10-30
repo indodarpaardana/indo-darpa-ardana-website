@@ -325,10 +325,6 @@
     width: calc(var(--spacing) * 4);
     height: calc(var(--spacing) * 4);
   }
-  .size-8 {
-    width: calc(var(--spacing) * 8);
-    height: calc(var(--spacing) * 8);
-  }
   .size-9 {
     width: calc(var(--spacing) * 9);
     height: calc(var(--spacing) * 9);
@@ -470,9 +466,6 @@
   }
   .gap-x-3 {
     column-gap: calc(var(--spacing) * 3);
-  }
-  .gap-x-4 {
-    column-gap: calc(var(--spacing) * 4);
   }
   .gap-x-5 {
     column-gap: calc(var(--spacing) * 5);
@@ -702,11 +695,6 @@
     --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
-  .transition-\[height\] {
-    transition-property: height;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
   .transition-all {
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -780,13 +768,6 @@
       }
     }
   }
-  .hover\:text-gray-500 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-gray-500);
-      }
-    }
-  }
   .hover\:text-white {
     &:hover {
       @media (hover: hover) {
@@ -797,11 +778,6 @@
   .focus\:bg-gray-100 {
     &:focus {
       background-color: var(--color-gray-100);
-    }
-  }
-  .focus\:text-gray-500 {
-    &:focus {
-      color: var(--color-gray-500);
     }
   }
   .focus\:opacity-80 {
@@ -857,11 +833,6 @@
   .sm\:block {
     @media (width >= 40rem) {
       display: block;
-    }
-  }
-  .sm\:flex {
-    @media (width >= 40rem) {
-      display: flex;
     }
   }
   .sm\:h-10 {
@@ -937,11 +908,6 @@
   .sm\:gap-x-6 {
     @media (width >= 40rem) {
       column-gap: calc(var(--spacing) * 6);
-    }
-  }
-  .sm\:p-5 {
-    @media (width >= 40rem) {
-      padding: calc(var(--spacing) * 5);
     }
   }
   .sm\:px-4 {
@@ -1347,93 +1313,6 @@
     @media (width >= 80rem) {
       --tw-leading: 68px;
       line-height: 68px;
-    }
-  }
-  .hs-accordion-active\:block {
-    &.hs-accordion.active {
-      display: block;
-    }
-    .hs-accordion.active>& {
-      display: block;
-    }
-    .hs-accordion.active>.hs-accordion-toggle & {
-      display: block;
-    }
-    .hs-accordion.active>.hs-accordion-heading>.hs-accordion-toggle & {
-      display: block;
-    }
-    &.hs-accordion-toggle {
-      .hs-accordion.active>& {
-        display: block;
-      }
-    }
-    &.hs-accordion-toggle {
-      .hs-accordion.active>.hs-accordion-heading>& {
-        display: block;
-      }
-    }
-    &.hs-accordion-force-active {
-      .hs-accordion.active & {
-        display: block;
-      }
-    }
-  }
-  .hs-accordion-active\:hidden {
-    &.hs-accordion.active {
-      display: none;
-    }
-    .hs-accordion.active>& {
-      display: none;
-    }
-    .hs-accordion.active>.hs-accordion-toggle & {
-      display: none;
-    }
-    .hs-accordion.active>.hs-accordion-heading>.hs-accordion-toggle & {
-      display: none;
-    }
-    &.hs-accordion-toggle {
-      .hs-accordion.active>& {
-        display: none;
-      }
-    }
-    &.hs-accordion-toggle {
-      .hs-accordion.active>.hs-accordion-heading>& {
-        display: none;
-      }
-    }
-    &.hs-accordion-force-active {
-      .hs-accordion.active & {
-        display: none;
-      }
-    }
-  }
-  .hs-accordion-active\:text-primary {
-    &.hs-accordion.active {
-      color: var(--color-primary);
-    }
-    .hs-accordion.active>& {
-      color: var(--color-primary);
-    }
-    .hs-accordion.active>.hs-accordion-toggle & {
-      color: var(--color-primary);
-    }
-    .hs-accordion.active>.hs-accordion-heading>.hs-accordion-toggle & {
-      color: var(--color-primary);
-    }
-    &.hs-accordion-toggle {
-      .hs-accordion.active>& {
-        color: var(--color-primary);
-      }
-    }
-    &.hs-accordion-toggle {
-      .hs-accordion.active>.hs-accordion-heading>& {
-        color: var(--color-primary);
-      }
-    }
-    &.hs-accordion-force-active {
-      .hs-accordion.active & {
-        color: var(--color-primary);
-      }
     }
   }
   .hs-collapse-open\:block {
