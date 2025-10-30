@@ -1,5 +1,5 @@
 // start active tab
-const listMenu = document.querySelectorAll(".list-menu");
+const listMenu = document.querySelectorAll("a.list-menu");
 
 listMenu.forEach((lm) => {
   lm.addEventListener("click", () => {
